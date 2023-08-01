@@ -15,7 +15,7 @@
         android:layout_marginStart="111dp"
         android:layout_marginTop="101dp"
         android:fontFamily="sans-serif"
-        android:text="Bienvenidos prueba"
+        android:text="Bienvenidos"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#D6283D"
         android:textColorHighlight="#5A0000"
