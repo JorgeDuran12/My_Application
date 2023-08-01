@@ -35,7 +35,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="104dp"
-        android:onClick="redi"
+        android:onClick="actividad2"
         android:text="Siguiente" />
 
     <ImageView

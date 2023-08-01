@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void redi (View view){
+    public void actividad2 (View view){
         Intent i = new Intent(this, MainActivity2.class);
         startActivity(i);
     }
