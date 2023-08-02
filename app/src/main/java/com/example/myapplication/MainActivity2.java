@@ -44,11 +44,9 @@ public class MainActivity2 extends AppCompatActivity {
 
         double sueldoInicial = Double.parseDouble(sueldo.getText().toString());
 
-
         boolean descuento = checkDescuento.isChecked();
         boolean salud = checkSalud.isChecked();
         boolean pension = checkPension.isChecked();
-
 
         double porcentajeDescuento = 0;
         if (descuento) {
@@ -63,14 +61,15 @@ public class MainActivity2 extends AppCompatActivity {
 
         double descuentoObtenido = sueldoInicial * (porcentajeDescuento / 100);
 
-        double sueldoNeto = sueldoInicial - descuentoObtenido;
-
         //calcular el valor por dia
 
         double dias = Double.parseDouble(dia.getText().toString());
 
-        double valor_dia = sueldoNeto / dias;
+        double valor_dia = sueldoInicial / 30;
 
+        double salario_bruto = valor_dia *  dias;
+
+        double sueldoNeto = salario_bruto - descuentoObtenido;
 
 
         i.putExtra("nombre", nombre.getText().toString());
@@ -79,7 +78,7 @@ public class MainActivity2 extends AppCompatActivity {
         i.putExtra("sueldo", sueldo.getText().toString());
         i.putExtra("dia", dia.getText().toString());
         i.putExtra("sueldo_neto", sueldoNeto);
-        i.putExtra("valor_dia", valor_dia);
+        i.putExtra("salario_bruto", valor_dia);
 
         startActivity(i);
     }

@@ -28,7 +28,7 @@ public class Liquidar extends AppCompatActivity {
 
         String name = getIntent().getStringExtra("nombre");
         String apellidos = getIntent().getStringExtra("apellidos");
-        nombre_tx.setText(name + apellidos);
+        nombre_tx.setText(name + " " + apellidos);
 
         String cargo = getIntent().getStringExtra("cargo");
         cargo_tx.setText(cargo);
@@ -42,10 +42,8 @@ public class Liquidar extends AppCompatActivity {
         double sueldoNeto = getIntent().getDoubleExtra("sueldo_neto", 0.0);
         sueldo_neto_tx.setText(String.valueOf(sueldoNeto));
 
-        double valor_dias = getIntent().getDoubleExtra("valor_dia", 0.0);
+        double valor_dias = getIntent().getDoubleExtra("salario_bruto", 0.0);
         valor_dia.setText(String.valueOf(valor_dias));
-
-
     }
 
     public void inicio (View view) {

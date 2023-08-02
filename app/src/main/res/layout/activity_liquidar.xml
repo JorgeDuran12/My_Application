@@ -89,8 +89,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="113dp"
-        android:layout_marginBottom="243dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="240dp"
         android:text="Subtotal:" />
 
     <Button
