@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class Liquidar extends AppCompatActivity {
 
-    private TextView nombre_tx, cargo_tx,sueldo_tx,dia_tx, sueldo_neto_tx, valor_dia;
+    private TextView nombre_tx, cargo_tx,sueldo_tx,dia_tx, sueldo_neto_tx, valor_dia, pension, salud, descuento;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,6 +24,9 @@ public class Liquidar extends AppCompatActivity {
         sueldo_tx = findViewById(R.id.presu);
         sueldo_neto_tx = findViewById(R.id.subtotal);
         valor_dia = findViewById(R.id.valor_dia);
+        descuento = findViewById(R.id.descuento1);
+        pension = findViewById(R.id.pension1);
+        salud = findViewById(R.id.salud1);
 
 
         String name = getIntent().getStringExtra("nombre");
@@ -44,6 +47,15 @@ public class Liquidar extends AppCompatActivity {
 
         double valor_dias = getIntent().getDoubleExtra("salario_bruto", 0.0);
         valor_dia.setText(String.valueOf(valor_dias));
+
+        double pension_dt = getIntent().getDoubleExtra("pension", 0.0);
+        pension.setText(String.valueOf("Por la pension: " + pension_dt));
+
+        double salud_dt = getIntent().getDoubleExtra("salud", 0.0);
+        salud.setText(String.valueOf("Por la salud : " + salud_dt));
+
+        double descuento_dt = getIntent().getDoubleExtra("descuento", 0.0);
+        descuento.setText(String.valueOf("Por el descuento: " + descuento_dt));
     }
 
     public void inicio (View view) {

@@ -49,19 +49,30 @@ public class MainActivity2 extends AppCompatActivity {
         boolean pension = checkPension.isChecked();
 
         double porcentajeDescuento = 0;
+
         if (descuento) {
             porcentajeDescuento += 3;
+
+            double descuento_data = sueldoInicial * (porcentajeDescuento / 100);
+
+            i.putExtra("descuento", descuento_data);
         }
         if (salud) {
             porcentajeDescuento += 4;
+
+            double salud_data = sueldoInicial * (porcentajeDescuento / 100);
+
+            i.putExtra("salud", salud_data);
         }
         if (pension) {
             porcentajeDescuento += 4;
+
+            double pension_data = sueldoInicial * (porcentajeDescuento / 100);
+
+            i.putExtra("pension", pension_data);
         }
 
         double descuentoObtenido = sueldoInicial * (porcentajeDescuento / 100);
-
-        //calcular el valor por dia
 
         double dias = Double.parseDouble(dia.getText().toString());
 

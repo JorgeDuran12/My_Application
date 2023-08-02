@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="242dp"
-        android:text="" />
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="141dp"
+        android:text="textview" />
 
     <TextView
         android:id="@+id/textView"
@@ -23,8 +23,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="42dp"
         android:text="Liquidación"
         android:textColor="#369C0A"
         android:textSize="25sp"
@@ -39,8 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="165dp"
-        android:layout_marginTop="125dp" />
+        android:layout_marginTop="118dp"
+        android:text="textview" />
 
     <TextView
         android:id="@+id/cargo"
@@ -49,9 +51,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="173dp"
-        android:layout_marginTop="173dp"
-        android:text="" />
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="175dp"
+        android:text="textview" />
 
     <TextView
         android:id="@+id/presu"
@@ -60,8 +62,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="179dp"
-        android:layout_marginTop="224dp" />
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="229dp"
+        android:text="textview" />
+
 
     <TextView
         android:id="@+id/dia"
@@ -70,8 +74,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="179dp"
-        android:layout_marginBottom="381dp" />
+        android:layout_marginStart="214dp"
+        android:layout_marginBottom="422dp"
+        android:text="textview" />
 
     <TextView
         android:id="@+id/textView6"
@@ -79,8 +84,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="61dp"
-        android:layout_marginBottom="313dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="351dp"
         android:text="Valor * Dia :" />
 
     <TextView
@@ -89,8 +95,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginBottom="138dp"
         android:text="Subtotal:" />
 
     <Button
@@ -99,11 +105,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="32dp"
         android:onClick="inicio"
         android:text="Salir" />
-
 
     <TextView
         android:id="@+id/valor_dia"
@@ -112,9 +118,41 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="311dp"
-        android:text="" />
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="350dp"
+        android:text="textview" />
+
+    <TextView
+        android:id="@+id/descuento1"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="291dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/salud1"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginBottom="289dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/pension1"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="225dp"
+        android:text="TextView" />
 
 
 </RelativeLayout>
