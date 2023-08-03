@@ -49,13 +49,13 @@ public class Liquidar extends AppCompatActivity {
         valor_dia.setText(String.valueOf(valor_dias));
 
         double pension_dt = getIntent().getDoubleExtra("pension", 0.0);
-        pension.setText(String.valueOf("Por la pension: " + pension_dt));
+        pension.setText(String.valueOf("Por la pension 4%: " + pension_dt));
 
         double salud_dt = getIntent().getDoubleExtra("salud", 0.0);
-        salud.setText(String.valueOf("Por la salud : " + salud_dt));
+        salud.setText(String.valueOf("Por la salud 4%: " + salud_dt));
 
         double descuento_dt = getIntent().getDoubleExtra("descuento", 0.0);
-        descuento.setText(String.valueOf("Por el descuento: " + descuento_dt));
+        descuento.setText(String.valueOf("Por el descuento 3%: " + descuento_dt));
     }
 
     public void inicio (View view) {
